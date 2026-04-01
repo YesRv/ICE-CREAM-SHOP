@@ -1,0 +1,36 @@
+## heladería sabor más pedido  - UPDATE
+## Ice cream shop
+# Flavors: Vainilla, Chocolate, Fresa 
+## Name the variables to track the quantity for each ice cream flavor, they all start at 0 
+Vainilla = 0 
+Chocolate = 0 
+Fresa = 0 
+The while loop sends an instruction to the program to keep repeating the code inside the block 
+as long as the total number of ice creams is less than  5. Once we reach the 5 orders the loop 
+will stop 
+while Vainilla + Chocolate + Fresa < 5: 
+  sabor_helado = int (input ("Por favor ingresa el sabor que quieres: 1. Vainilla  2. Chocolate  3. 
+Fresa ")) 
+The if condition checks the option that we choosed and depends the option the program will 
+shows the instruction that we previously set up. That means if we select the vainilla flavor the 
+program will add to the counter that we choose 1 vainilla ice cream and follows the same 
+process for each flavor 
+     if  sabor_helado == 1: 
+          print("Elegiste Vainilla ") 
+          Vainilla = Vainilla + 1 
+     elif sabor_helado == 2: 
+          print ("Elegiste Chocolate ") 
+          Chocolate = Chocolate + 1 
+     elif sabor_helado == 3: 
+          print ("Elegiste Fresa ") 
+          Fresa = Fresa + 1 
+If we choose an option that’s not available the system will shows the next instruction  
+     else: 
+          print (" Sabor no valido ") 
+ 
+ 
+When we reach the 5 ice creams orders the program will stop to ask the flavor that we want to 
+choose and then it’s going to show us the total amount of orders for each ice cream flavor. 
+print ("Vainilla = ", Vainilla) 
+print ("Chocolate= ", Chocolate) 
+print ("Fresa= ", Fresa)
